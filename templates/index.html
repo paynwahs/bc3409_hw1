@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <form action="/" method="post">
+            <p>Enter Sing to US:</p>
+            <p><input type="number" step="0.01" name="rates"></p>
+            <p><input type="submit" value="submit"></p>
+        </form>
+
+        <p> The predicted DBS share price is {{result}} </p>
+
+        <!-- Add a button for injecting the joke -->
+        <button id="jokeButton">Inject Joke</button>
+
+        <!-- Placeholder for the joke -->
+        <p id="joke"></p>
+
+        <script>
+            // JavaScript to inject the joke
+            document.getElementById('jokeButton').addEventListener('click', function() {
+                // Inject the joke into the placeholder paragraph
+                document.getElementById('joke').textContent = "The only thing faster than Singapore's MRT during peak hours is the way we 'chope' seats with a tissue packet.";
+            });
+        </script>
+    </body>
+</html>
